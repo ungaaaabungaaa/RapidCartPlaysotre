@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:id="@+id/mainlayout"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/welcome"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_21sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/googlebuttonbg"
+        android:drawableStart="@drawable/google"
+        android:paddingStart="@dimen/_16sdp"
+        android:text="@string/login_in_with_google"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/add_your_shop"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#0F9D58"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:forceDarkAllowed="false"
+        android:layout_margin="@dimen/_8sdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="17900.json"
+        app:lottie_loop="true"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button8"
+        android:layout_width="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="52dp"
+        android:background="@drawable/facebookbuttonbg"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:paddingStart="@dimen/_16sdp"
+        android:text="Login in with Mail"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button10"
+        android:layout_width="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="52dp"
+        android:background="@drawable/phonebuttonbg"
+        android:drawableStart="@drawable/phone"
+        android:paddingStart="@dimen/_16sdp"
+        android:text="Login in with Phone"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Namaste"
+        android:textSize="@dimen/_24sdp"
+
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

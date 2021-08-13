@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onlinepayment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toTopOf="@+id/summaryonline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="28608-make-payment.json"
+        app:lottie_loop="true">
+    </com.airbnb.lottie.LottieAnimationView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/summaryonline"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/darirycartbuttonbg"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+        tools:layout_editor_absoluteX="21dp">
+
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:forceDarkAllowed="false"
+            android:text="@string/price_details"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="#FFF"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="0dp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:forceDarkAllowed="false"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:text="@string/price"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintEnd_toStartOf="@+id/textView42"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:forceDarkAllowed="false"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView41"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView41" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:forceDarkAllowed="false"
+            android:textSize="@dimen/_12sdp"
+            android:textAllCaps="false"
+            android:textAlignment="textStart"
+            android:textColor="#FFF"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_54sdp"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/darirycartbuttonbg"
+        android:text="@string/check_out"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="21dp">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lottieAnimationView5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

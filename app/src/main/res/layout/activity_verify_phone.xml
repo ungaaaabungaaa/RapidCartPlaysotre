@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyPhoneActivity">
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:forceDarkAllowed="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ProgressBar>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:lottie_loop="true"
+        android:forceDarkAllowed="false"
+        android:scaleType="centerInside"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="56152otp2fa.json"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCode"
+        app:layout_constraintTop_toTopOf="parent">
+    </com.airbnb.lottie.LottieAnimationView>
+
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="match_parent"
+        android:forceDarkAllowed="false"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_marginBottom="16dp"
+        android:digits="0123456789"
+        android:hint="@string/enter_verification_code"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSignIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSignIn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_48sdp"
+
+        android:layout_margin="@dimen/_18sdp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/cartbutton"
+        android:text="@string/sign_in"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCode"
+        app:layout_constraintStart_toStartOf="@+id/editTextCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

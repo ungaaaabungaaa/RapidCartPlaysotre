@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "149944551272",
+    "project_id": "rapid-cart-66e49",
+    "storage_bucket": "rapid-cart-66e49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149944551272:android:488994bc2d14c0232bb8dd",
+        "android_client_info": {
+          "package_name": "com.example.rapidcart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149944551272-cd25sg3kgak9fqjgq95v1rah0vek0ma9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYLuqQyhmvqtoBLtxDhofIV_d5HJfbAXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149944551272-cd25sg3kgak9fqjgq95v1rah0vek0ma9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149944551272:android:2f6d462b7a2a00192bb8dd",
+        "android_client_info": {
+          "package_name": "com.example.rapidcartcoustmer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149944551272-7m4um8a83sr3eae90e1qe0507t9jic2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rapidcartcoustmer",
+            "certificate_hash": "1166eb619167f98c6765f873d30b7d579e2d4373"
+          }
+        },
+        {
+          "client_id": "149944551272-cd25sg3kgak9fqjgq95v1rah0vek0ma9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYLuqQyhmvqtoBLtxDhofIV_d5HJfbAXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149944551272-cd25sg3kgak9fqjgq95v1rah0vek0ma9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149944551272:android:b17e3f49dcbe118e2bb8dd",
+        "android_client_info": {
+          "package_name": "com.rapidcartconsumers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149944551272-cd25sg3kgak9fqjgq95v1rah0vek0ma9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYLuqQyhmvqtoBLtxDhofIV_d5HJfbAXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149944551272-cd25sg3kgak9fqjgq95v1rah0vek0ma9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
