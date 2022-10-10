@@ -1,4 +1,4 @@
-# RapidCart Avalable on playstore
+# RapidCart availableon playstore
 ## Simple Local ecommerce app 
 ### 12mb no compression firebase database with bug report ,Online razor payment , cart ui And push notification 
 ### Dynamic dark theme day/night
